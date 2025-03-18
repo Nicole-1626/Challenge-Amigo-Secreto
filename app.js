@@ -1,8 +1,6 @@
-// El principal objetivo de este desafío es fortalecer tus habilidades en lógica de programación. Aquí deberás desarrollar la lógica para resolver el problema.
+// Código para sorteo de amigo secreto
 
-
-//let listaAmigosWeb = [];
-
+//Declaración
 const inputAmigo = document.getElementById("amigo");
 let listaAmigos = [];
 const listaAmigosWeb = document.getElementById("listaAmigos");
@@ -12,26 +10,20 @@ const resultado = document.getElementById("resultado");
 function agregarAmigo() {
 
 // Ver que no esté vacío:
-//function validarAmigo() {
   if (inputAmigo.value === "") {
     alert("Debes ingresar nombre de un amigo");
     return;
   } else {
-//let amigo = inputAmigo.value;
   listaAmigos.push(inputAmigo.value);
-  //inputAmigo.value = "";
   console.log(listaAmigos);
   actualizarLista();
   inputAmigo.value = "";
   }
-//}
 
 } 
 
 //Función para actualizar la lista de amigos:
 function actualizarLista() {
-//listaAmigosWeb.innerHTML = "";
-//for (let i = 0; i < listaAmigos.length; i++) {
   listaAmigosWeb.innerHTML += `<li>${inputAmigo.value}</li>`;
 }
 
